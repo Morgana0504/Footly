@@ -1,0 +1,17 @@
+# Credenciales
+.env
+
+# Respaldo de base de datos con datos reales
+/database/footly.sql
+
+# Archivos temporales
+.DS_Store
+*.log
+*.zip
+*.bak
+
+# Configuración local de editores
+.idea/
+
+# Configuración local de Visual Studio Code
+.vscode/

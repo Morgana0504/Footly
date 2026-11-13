@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi perfil | Administrador</title>
+
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="profile-body">
+
+    <div class="profile-container">
+
+        <header class="profile-header">
+            <a href="admin.html" class="btn btn-outline">← Volver al panel</a>
+            <span class="profile-label">GESTIÓN DE CUENTA</span>
+        </header>
+
+        <main class="profile-content">
+
+            <div class="profile-heading">
+                <div>
+                    <span class="section-number">CUENTA / ADMINISTRADOR</span>
+                    <h1>Mi perfil</h1>
+                    <p>Consulta y administra tu información personal.</p>
+                </div>
+            </div>
+
+            <section class="profile-card">
+
+                <div class="profile-avatar-section">
+                    <div class="profile-avatar">A</div>
+                    <div>
+                        <h2>Administrador</h2>
+                        <p>Administrador del sistema</p>
+                        <span class="profile-status">● Cuenta activa</span>
+                    </div>
+                </div>
+
+                <div class="profile-divider"></div>
+
+                <form class="profile-form">
+
+                    <div class="profile-section-title">
+                        <h3>Información personal</h3>
+                        <p>Datos generales de tu cuenta.</p>
+                    </div>
+
+                    <div class="profile-grid">
+
+                        <div class="profile-field">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" value="ingrese sus nombre">
+                        </div>
+
+                        <div class="profile-field">
+                            <label for="apellido">Apellidos</label>
+                            <input type="text" id="apellido" value="ingrese sus apellido">
+                        </div>
+
+                        <div class="profile-field">
+                            <label for="correo">Correo electrónico</label>
+                            <input type="email" id="correo" value="ejemplo: admin@empresa.com">
+                        </div>
+
+                        <div class="profile-field">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" value="coloque su número de teléfono">
+                        </div>
+
+                        <div class="profile-field">
+                            <label for="usuario">Nombre de usuario</label>
+                            <input type="text" id="usuario" value="ejemplo: admin123" disabled>
+                        </div>
+
+                        <div class="profile-field">
+                            <label for="rol">Rol del sistema</label>
+                            <input type="text" id="rol" value="ejemplo: administrador01" disabled>
+                        </div>
+
+                    </div>
+
+                    <div class="profile-divider"></div>
+
+                    <div class="profile-section-title">
+                        <h3>Seguridad</h3>
+                        <p>Actualiza tu contraseña para proteger tu cuenta.</p>
+                    </div>
+
+                    <div class="profile-grid">
+
+                        <div class="profile-field">
+                            <label for="password">Nueva contraseña</label>
+                            <input type="password" id="password"
+                                   placeholder="Ingresa una nueva contraseña">
+                        </div>
+
+                        <div class="profile-field">
+                            <label for="confirm-password">Confirmar contraseña</label>
+                            <input type="password" id="confirm-password"
+                                   placeholder="Confirma tu contraseña">
+                        </div>
+
+                    </div>
+
+                    <div class="profile-actions">
+                        <a href="admin.html" class="btn btn-outline">Cancelar</a>
+                        <button type="button" class="btn btn-lime">
+                            Guardar cambios
+                        </button>
+                    </div>
+
+                </form>
+
+            </section>
+
+            <footer class="profile-footer">
+                Panel administrativo · Gestión de usuarios
+            </footer>
+
+        </main>
+    </div>
+
+</body>
+</html>

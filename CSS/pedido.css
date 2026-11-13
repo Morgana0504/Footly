@@ -1,0 +1,159 @@
+/* =========================== ENCABEZADO DE PÁGINA ================= */
+.page-heading {
+    padding: 60px 7% 25px;
+}
+
+.page-heading h1 {
+    font-size: clamp(36px, 5vw, 55px);
+    letter-spacing: -2px;
+    font-weight: 900;
+}
+
+.page-heading p {
+    color: var(--gray);
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+/* =========================== FORMULARIO DE PEDIDOS =================== */
+.order-layout {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(260px, 0.7fr);
+    gap: 30px;
+    align-items: start;
+}
+
+.order-form {
+    min-width: 0;
+}
+
+.form-section {
+    display: grid;
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 18px;
+    padding: 28px;
+    background: var(--white);
+    border: 1px solid var(--gray-light);
+    border-radius: 17px;
+    margin-bottom: 20px;
+}
+
+.step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 11px;
+    background: var(--lime);
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.form-section-content {
+    min-width: 0;
+}
+
+.form-section h2 {
+    font-size: 19px;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+}
+
+.form-section-content > p {
+    font-size: 10px;
+    margin-bottom: 23px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 19px 15px;
+}
+
+.field {
+    min-width: 0;
+}
+
+.field-full {
+    grid-column: 1 / -1;
+}
+
+.field textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* ================ RESUMEN DEL PEDIDO ====================== */
+.order-summary {
+    padding: 25px;
+    border-radius: 17px;
+    background: var(--white);
+    border: 1px solid var(--gray-light);
+    position: sticky;
+    top: 105px;
+}
+
+.order-summary h2 {
+    font-size: 25px;
+    letter-spacing: -1px;
+    margin-bottom: 23px;
+}
+
+.summary-placeholder {
+    padding: 28px 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    background: #f3f4ee;
+    border-radius: 13px;
+}
+
+.summary-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background: var(--lime);
+    font-size: 24px;
+}
+
+.summary-placeholder h3 {
+    font-size: 12px;
+    margin-bottom: 9px;
+}
+
+.summary-placeholder p {
+    font-size: 10px;
+    color: var(--gray);
+    line-height: 1.8;
+}
+
+.summary-line,
+.summary-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 13px 0;
+    border-bottom: 1px solid var(--gray-light);
+    font-size: 10px;
+}
+
+.summary-line span {
+    color: var(--gray);
+}
+
+.summary-total {
+    margin-top: 8px;
+    border: 0;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.order-summary > .small-text {
+    margin-top: 15px;
+}
